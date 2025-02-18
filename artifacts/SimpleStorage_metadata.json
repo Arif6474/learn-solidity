@@ -6,26 +6,62 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_id",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_fav_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isAdult",
+						"type": "bool"
 					}
 				],
-				"stateMutability": "view",
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "retrive",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getPerson",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -35,13 +71,34 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_newFavoriteNumber",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "listOfPeople",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fav_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isAdult",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +115,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage_function.sol": "SimpleStorage"
+			"SimpleStorage_array_struct.sol": "SimpleStorage"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -72,12 +129,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage_function.sol": {
-			"keccak256": "0xf67914bd241236dd5d60a9f5b397a23be0ddea20f50aaf6bfda11758f4b88d1e",
+		"SimpleStorage_array_struct.sol": {
+			"keccak256": "0x9d8e10f8ba3f0d7b645aad5d5c5d2b8e8a9f94b92e13453b8aa991fa92740133",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2538499921327d21b2202f5109b47762242cae83785bd5d71d902c595eb40fc8",
-				"dweb:/ipfs/QmRGXhpgdHkACYRHLTxr4hHj1PhbXyT8rGsvjt7rDJarxt"
+				"bzz-raw://480231a6b598290f26da84f776b46382d1a965ca448074ed9d85dad2099eda1f",
+				"dweb:/ipfs/QmXqEecWGSmVpnyScuf9VHUKXbpTV9ViEwBnk7DRFGSm7P"
 			]
 		}
 	},
